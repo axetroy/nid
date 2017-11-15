@@ -3,6 +3,7 @@ package nid
 import (
   "testing"
   "strings"
+  "fmt"
 )
 
 func Test_New(t *testing.T) {
@@ -26,6 +27,10 @@ func Test_New(t *testing.T) {
   )
   for i := 0; i < 100000; i++ {
     nidList[i] = New(length)
+  }
+
+  for i := 0; i < 1000; i++ {
+    fmt.Println(New(length))
   }
 
   dic := make(map[string]bool)
