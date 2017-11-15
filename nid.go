@@ -11,12 +11,15 @@ import (
   "time"
 )
 
+var seed = time.Now().UnixNano()
+
+var rnd = rand.New(rand.NewSource(seed))
+
 /**
 Generate a new random number id
  */
 func New(length int) (nid string) {
   nid = ""
-  rnd := rand.New(rand.NewSource(time.Now().UnixNano()))
 
   for i := 0; i < length; i++ {
     var (
@@ -34,4 +37,9 @@ func New(length int) (nid string) {
     nid += strconv.Itoa(r1)
   }
   return
+}
+
+func SetSeed(s int64) {
+  seed = s
+  rand.New(rand.NewSource(seed))
 }
