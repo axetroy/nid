@@ -1,6 +1,6 @@
 ## Nid for go
 
-[![Build Status](https://travis-ci.org/axetroy/Github.svg?branch=master)](https://travis-ci.org/axetroy/Github)
+[![Build Status](https://travis-ci.org/axetroy/nid.svg?branch=master)](https://travis-ci.org/axetroy/nid)
 ![License](https://img.shields.io/badge/license-Apache-green.svg)
 
 Generate random number id in Golang

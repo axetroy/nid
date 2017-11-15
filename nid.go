@@ -16,7 +16,7 @@ Generate a new random number id
  */
 func New(length int) (nid string) {
   nid = ""
-  rnd := rand.New(rand.NewSource(time.Now().UnixNano() * 1000))
+  rnd := rand.New(rand.NewSource(time.Now().UnixNano()))
 
   for i := 0; i < length; i++ {
     var (
