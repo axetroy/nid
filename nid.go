@@ -41,5 +41,5 @@ func New(length int) (nid string) {
 
 func SetSeed(s int64) {
   seed = s
-  rand.New(rand.NewSource(seed))
+  rnd = rand.New(rand.NewSource(seed))
 }
