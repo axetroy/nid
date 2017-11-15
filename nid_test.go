@@ -3,7 +3,6 @@ package nid
 import (
   "testing"
   "strings"
-  "fmt"
 )
 
 func Test_New(t *testing.T) {
@@ -32,8 +31,6 @@ func Test_New(t *testing.T) {
   dic := make(map[string]bool)
 
   for _, nid := range nidList {
-
-    fmt.Println(nid)
 
     ss := strings.Split(nid, "")
 
