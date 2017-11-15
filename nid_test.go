@@ -1,7 +1,6 @@
 package nid
 
 import (
-  _ "github.com/lib/pq"
   "testing"
   "strings"
 )
